@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <base target="_top">
+  <link rel="stylesheet" href="dsz.css" type="text/css" />
+    <title>DSz pontozás</title>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            
+      
+          <div class="row g-5">
+            <div class="col-12 col-md-8 col-lg-5 col-xl-4">
+                <!--<h2 class="mb-3">Pontozás</h4>-->
+                <input type="hidden" value="<?= url ?>" id="url" />
+                <div class="row g-5">
+                    <div class="col-6 col-md-4">
+                        <div class="py-5 text-left">
+                            <img class="d-block mb-4" src="logo_dsz.svg" alt="" style="width:100%">
+                            
+                        </div>
+                    </div>
+                </div>
+                <form method="post" action="" >
+                    <div class="form">
+                        <div class="row g-3">
+                        
+                            <div class="col-12 form-mezok">
+                                <label for="tasktype" class="form-label">Feladat típus</label>
+                                <select class="form-select" name="tasktype" id="tasktype" onchange="showButton();ShowInitialValues()">
+                                    <option value="" ></option>
+                                    <option value="work1">Infó gyűjtés</option>
+                                    <option value="work2">Gyűlés</option>
+                                    <option value="work3">Tanulás</option>
+                                    <option value="work4">Aktív munka</option>
+                                    <option value="work5">Megvalósítás</option>
+                                    <option value="work6">Egyéb szervezési feladatok</option>
+                                </select>
+                            </div>
+                            <div class="col-12 form-mezok">
+                                <label for="comment" class="form-label">Rövid leírás</label>
+                                <input type="text" class="form-control" name="comment" id="comment" value="" oninput="showButton()">
+                            
+                            </div>
+                            <div class="col-12 form-mezok">
+                                <label for="comment" class="form-label">Munkaóra</label><span id="szam_e"></span>
+                                <input type="number" class="form-control" name="workinghours" id="workinghours" value=""  oninput="IsAnum(this.value);showButton()">
+                            
+                            </div> 
+                        </div>
+                    
+                    </div>
+                    <div class="row g-5" id="bottom-buttons">
+                        <div class="col-6 text-center">
+                            
+                        </div>
+                        
+                        <div class="col-6 text-center">
+                            <input  type="submit" name="submitButton" value="MENTÉS" onclick="" class="btn btn_allfield btn-design" disabled /><br>
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </main>
+      
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">2022 Design Szakosztály</p>
+          <ul class="list-inline">
+          </ul>
+        </footer>
+      </div>
+
+      
+
+    
+    
+
+
+  </body>
+</html>
