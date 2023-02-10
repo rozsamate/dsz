@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/source-code-pro.min.css");
+body {
+    background: rgb(241,241,241);
+    background: linear-gradient(180deg, rgba(241,241,241,0.9755252442773985) 0%, rgba(221,221,221,1) 100%);
+}
+.form-label {
+    color: rgba(0, 17, 23, 0.7);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12pt;
+    line-height: 16px;
+    padding: 8px;
+}
+.form-select, .form-control {
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+
+    background-color: rgba(0, 17, 23, 0.05);
+}
+
+/* .form-select {
+    border-radius: 4px;
+    background-color: rgb(241,241,241);
+} */
+
+.form-select:focus, .form-control:focus {
+
+    box-shadow:  inset 0 0 0 3px rgba(0, 0, 0, 0.075);
+    outline: 0 none;
+    border-color: rgba(38, 41, 45, 0.1);
+    background-color: rgba(0, 17, 23, 0.05);
+}
+.btn-design{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #005B7C;
+}
+.btn-design:hover, .btn-design:focus{
+    color: white;
+    background-color: #005B7C;
+}
+.btn-design:active{
+    color: white;
+    background-color: #005B7C;
+}
+#bottom-buttons .btn{
+    width:100%; 
+    min-height: 36pt;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+.bootstrap-select .dropdown-item.active, .bootstrap-select .dropdown-item:active{
+    background-color: rgba(0, 17, 23, 0.05);
+    color: rgba(0, 17, 23, 0.7);
+    
+}
+.bootstrap-select .dropdown-item:hover{
+    background-color: rgba(0, 17, 23, 0.05);
+    color: rgba(0, 17, 23, 0.7);
+}
+.bootstrap-select .dropdown-menu{
+    background-color: rgb(235, 235, 235);
+    color: rgba(0, 17, 23, 0.7);
+}
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
+    outline: none !important;
+}
